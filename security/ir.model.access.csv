@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sb_account_notes,access.sb.account.notes,model_sb_account_notes,base.group_user,1,1,1,1
+access_sb_note_templates,access.sb.note.templates,model_sb_note_templates,base.group_user,1,1,1,1
+access_sb_pl_report,access.sb.pl.report,model_sb_pl_report,base.group_user,1,1,1,1
+access_sb_bs_report,access.sb.bs.report,model_sb_bs_report,base.group_user,1,1,1,1
+access_sb_account_note_line,access.sb.account.note.line,model_sb_account_note_line,base.group_user,1,1,1,1
+access_sb_trial_balance_wizard,access.sb.trial.balance.wizard,model_sb_trial_balance_wizard,base.group_user,1,1,1,1

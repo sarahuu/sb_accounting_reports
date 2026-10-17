@@ -1,0 +1,19 @@
+<odoo>
+    <record id="view_sb_account_notes_list" model="ir.ui.view">
+        <field name="name">sb.account.notes.list</field>
+        <field name="model">sb.account.notes</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="note_id"/>
+                <field name="name"/>
+                <field name="note_type"/>
+            </list>
+        </field>
+    </record>
+    <record id="sb_account_notes_action" model="ir.actions.act_window">
+        <field name="name">Account Notes</field>
+        <field name="res_model">sb.account.notes</field>
+        <field name="view_mode">list</field>
+    </record>
+
+</odoo>

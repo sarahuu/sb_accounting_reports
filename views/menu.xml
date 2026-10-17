@@ -1,0 +1,8 @@
+<odoo>
+    <menuitem id="sb_account_notes_config_menu" name="Account Notes" action="sb_account_notes_action" parent="account.menu_finance_configuration"/>
+    <menuitem id="sb_account_notes_menu" name="Account Notes" action="sb_account_notes_action" parent="sb_account_notes_config_menu" sequence="1"/>
+    <menuitem id="sb_note_templates_menu" name="Note Templates" action="sb_note_templates_action" parent="sb_account_notes_config_menu" sequence="2"/>
+
+    <menuitem id="menu_trial_balance_wizard" name="Trial Balance Report" parent="account.menu_finance_reports" sequence="0"
+            action="action_sb_trial_balance_wizard"/>
+</odoo>

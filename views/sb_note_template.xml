@@ -1,0 +1,64 @@
+<odoo>
+    <record id="view_sb_note_templates_list" model="ir.ui.view">
+        <field name="name">sb.note.templates.list</field>
+        <field name="model">sb.note.templates</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_sb_note_templates_form" model="ir.ui.view">
+        <field name="name">sb.note.templates.form</field>
+        <field name="model">sb.note.templates</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <notebook>
+                        <page string="Profit and Loss">
+                            <field name="pl_report">
+                                <list editable="bottom">
+                                    <field name="note_id"/>
+                                    <field name="note"/>
+                                    <field name="note_type"/>
+                                    <field name="report_to"/>
+                                    <field name="calculate"/>
+                                    <field name="sequence" widget="handle"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Balance Sheet">
+                            <field name="bs_report">
+                                <list editable="bottom">
+                                    <field name="note_id"/>
+                                    <field name="note"/>
+                                    <field name="note_type"/>
+                                    <field name="report_to"/>
+                                    <field name="calculate"/>
+                                    <field name="sequence" widget="handle"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="PL to BS">
+                            <group>
+                                <field name="pl"/>
+                                <field name="bs"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sb_note_templates_action" model="ir.actions.act_window">
+        <field name="name">Note Templates</field>
+        <field name="res_model">sb.note.templates</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>
